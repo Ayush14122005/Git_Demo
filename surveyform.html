@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <h1 id="title">Course Feedback Survey</h1>
+
+  <p id="description">
+    Help us improve by sharing your experience.
+  </p>
+
+  <form id="survey-form">
+
+    <!-- NAME -->
+    <label id="name-label" for="name">Name</label><br>
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+      required
+    ><br><br>
+
+    <!-- EMAIL -->
+    <label id="email-label" for="email">Email</label><br>
+    <input
+      type="email"
+      id="email"
+      placeholder="Enter your email"
+      required
+    ><br><br>
+
+    <!-- NUMBER -->
+    <label id="number-label" for="number">Age</label><br>
+    <input
+      type="number"
+      id="number"
+      min="10"
+      max="100"
+      placeholder="Enter your age"
+    ><br><br>
+
+    <!-- DROPDOWN -->
+    <label for="dropdown">Your Role</label><br>
+    <select id="dropdown">
+      <option value="student">Student</option>
+      <option value="developer">Developer</option>
+    </select><br><br>
+
+    <!-- RADIO BUTTONS -->
+    <p>Would you recommend this course?</p>
+    <input type="radio" name="recommend" value="yes"> Yes<br>
+    <input type="radio" name="recommend" value="no"> No<br><br>
+
+    <!-- CHECKBOXES (FIXED) -->
+    <p>What did you like?</p>
+    <input type="checkbox" value="content"> Content<br>
+    <input type="checkbox" value="projects"> Projects<br>
+    <input type="checkbox" value="support"> Support<br><br>
+
+    <!-- TEXTAREA (FIXED) -->
+    <p>Additional Comments</p>
+    <textarea placeholder="Write your comments here..."></textarea><br><br>
+
+    <!-- SUBMIT BUTTON (FIXED) -->
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
