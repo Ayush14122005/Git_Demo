@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style first input differently */
+input:first-of-type {
+  border-radius: 12px;
+}
+
+/* Focus state */
+input:focus,
+textarea:focus {
+  border-color: blue;
+  outline: none;
+}
+
+/* Invalid state */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+/* Valid state */
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+.radio-group {
+  margin-top: 20px;
+}
+
+/* Checked radio styling */
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: 0 0 5px green;
+}
+
+/* Change label color when radio is checked */
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: green;
+}
